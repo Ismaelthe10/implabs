@@ -11,12 +11,16 @@
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "migration:create": "node-pg-migrate --migrations-dir infra/migrations create",
+    "migration:up": "node-pg-migrate --migrations-dir infra/migrations --envPath .env.development up"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "next": "^16.3.0",
+    "node-pg-migrate": "^9.0.0",
     "pg": "^8.22.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
