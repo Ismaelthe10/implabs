@@ -37,10 +37,3 @@ O `npm run dev` sobe o PostgreSQL antes de iniciar o Next.js. A aplicação roda
 ## Licença
 
 Distribuído sob a licença MIT.
-
-<<<<<<< HEAD
-=======
-
-sistema
-
-> > > > > > > fix-migrations-endpoint
