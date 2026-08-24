@@ -1,5 +1,9 @@
 # IMP Labs
 
+<p align="center">
+  <img src="public/implabs.png" alt="implabs" width="100%">
+</p>
+
 Repositório do [implabs.com.br](https://implabs.com.br) — meu espaço próprio na internet, onde construo minha marca como desenvolvedor.
 
 ## Sobre
