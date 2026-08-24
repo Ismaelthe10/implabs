@@ -4,9 +4,9 @@ Repositório do [implabs.com.br](https://implabs.com.br) — meu espaço própri
 
 ## Sobre
 
-O IMP Labs é o meu portfólio: um endereço que é meu, onde meus projetos e minha forma de resolver problemas ficam reunidos.
+O IMP Labs é o meu portfólio.
 
-Por trás dele estou construindo um sistema de delivery do zero, à mão, como exercício de engenharia — API, banco de dados, migrations e testes. O front é a vitrine; o back é o treino.
+Por trás dele estou construindo um sistema, à mão, como exercício de engenharia — API, banco de dados, migrations e testes. O front é a vitrine; o back é o treino.
 
 ## Stack
 
@@ -34,3 +34,9 @@ O `npm run dev` sobe o PostgreSQL antes de iniciar o Next.js. A aplicação roda
 
 Distribuído sob a licença MIT.
 
+<<<<<<< HEAD
+=======
+
+sistema
+
+> > > > > > > fix-migrations-endpoint
