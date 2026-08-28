@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useState } from "react";
 
 const NOME = "Ismael Monteiro";
 const CARGO = "Full stack developer";
@@ -53,6 +53,14 @@ const PROJETOS = [
 
 const QUANTIDADE_ESTRELAS = 160;
 const PONTO_DE_QUEBRA = 720; // px — abaixo disso, constelação vira chips
+
+// array fixo, sem Math.random — não precisa de hook, só uma constante de módulo
+const CADENTES = [
+  { top: -4, left: 6, largura: 150, duracao: 9, atraso: 1 },
+  { top: 2, left: 38, largura: 190, duracao: 13, atraso: 5.5 },
+  { top: -8, left: 62, largura: 120, duracao: 11, atraso: 8.5 },
+  { top: 14, left: -6, largura: 165, duracao: 16, atraso: 12 },
+];
 
 const ESTILOS = `
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;400;500&display=swap');
@@ -448,27 +456,15 @@ function Home() {
 /* ── céu de fundo ───────────────────────────── */
 
 function Ceu() {
-  const estrelas = useMemo(
-    () =>
-      Array.from({ length: QUANTIDADE_ESTRELAS }, () => ({
-        top: Math.random() * 100,
-        left: Math.random() * 100,
-        tamanho: Math.random() * 2 + 0.7,
-        brilho: 0.25 + Math.random() * 0.6,
-        atraso: Math.random() * 6,
-        duracao: 3 + Math.random() * 5,
-      })),
-    [],
-  );
-
-  const cadentes = useMemo(
-    () => [
-      { top: -4, left: 6, largura: 150, duracao: 9, atraso: 1 },
-      { top: 2, left: 38, largura: 190, duracao: 13, atraso: 5.5 },
-      { top: -8, left: 62, largura: 120, duracao: 11, atraso: 8.5 },
-      { top: 14, left: -6, largura: 165, duracao: 16, atraso: 12 },
-    ],
-    [],
+  const [estrelas] = useState(() =>
+    Array.from({ length: QUANTIDADE_ESTRELAS }, () => ({
+      top: Math.random() * 100,
+      left: Math.random() * 100,
+      tamanho: Math.random() * 2 + 0.7,
+      brilho: 0.25 + Math.random() * 0.6,
+      atraso: Math.random() * 6,
+      duracao: 3 + Math.random() * 5,
+    })),
   );
 
   return (
@@ -488,7 +484,7 @@ function Ceu() {
           }}
         />
       ))}
-      {cadentes.map((c, i) => (
+      {CADENTES.map((c, i) => (
         <span
           key={`c-${i}`}
           className="cadente"
