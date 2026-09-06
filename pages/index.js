@@ -32,15 +32,19 @@ const PROJETOS = [
     link: "https://www.barbeariaarrumadinho.com.br/",
   },
   {
+    titulo: "CCN SIS",
+    pilha: "Typescript · Next.js · Vitest · Firebase · Vercel",
+    link: "https://ccnsis.implabs.com.br/",
+  },
+  {
     titulo: "Metrópole Serviços",
     pilha: "React 19 · React Router 7 · Vite 7 · Tailwind CSS 4 · Vercel",
     link: "https://metropole-servicos.vercel.app/",
   },
   {
     titulo: "Doug Burguers",
-    pilha: "React · TypeScript · Next.js App Router · CSS",
-    link: "",
-    situacao: "em breve",
+    pilha: "Javascript · React · Vite · CSS",
+    link: "https://www.dougburguers.com.br/",
   },
   {
     titulo: "Clone TabNews",
