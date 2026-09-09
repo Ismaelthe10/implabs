@@ -46,13 +46,6 @@ const PROJETOS = [
     pilha: "Javascript · React · Vite · CSS",
     link: "https://www.dougburguers.com.br/",
   },
-  {
-    titulo: "Clone TabNews",
-    pilha:
-      "Node.js 24 · Next.js 16 · React 19 · PostgreSQL 16 · Jest · Docker · GitHub Actions",
-    link: "https://github.com/Ismaelthe10/clone-tabnews",
-    situacao: "estudo",
-  },
 ];
 
 const QUANTIDADE_ESTRELAS = 160;
